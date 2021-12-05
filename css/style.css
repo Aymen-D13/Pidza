@@ -300,5 +300,6 @@ h1{
 	.text1 .btn1{width: 100%; margin-left: 19%;}
 	.foodmenu{flex-direction:column; margin-left: 0%; padding: 0%;}
 	.nav ul{display:inline-table;}
+	.social{display: none;}
 }
 		
