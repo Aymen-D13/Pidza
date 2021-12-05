@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+	<title>Pidza</title>
+</head>
+<body">
+<!---------------------Navigation Bar------------------------------->	
+	<div class="navigation-container">
+		<div class="navigation-content">
+			<div class="logo"><a href="#des"><img src="img/logo.png"/></a></div>
+			<div class="nav">
+				<ul>
+					<li><a href="#Menu">MENU</a></li>
+					<li><a href="#">BEST DEALS</a></li>
+					<li><a href="login1.html">ONLINE ORDER</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!---------------------Home Page------------------------------->
+	<div class="home" id="home">
+		<div class="wellcome">
+			<img src="img/PiDza wellcom.png">
+		</div>		
+        <div class="text1">
+        	<p>The Best Pizza In Algeria</p>
+        	<div class="btn1">
+        		<a href="">Order Now</a>
+            	<a href="#Menu">Menu</a>	
+        	</div>
+        </div>
+    </div>
+<!--------------------Menu--------------------------------->
+<div class="menu" id="Menu">
+	<h1>Our Menu</h1>
+	<div class="foodmenu">
+		<div class="food-one">
+			<div class="overlay">
+    			<div class="text2">
+    				<div class="btn2">
+    					<a href=".././Gym/index.html">See Menu</a>
+    				</div>
+    			</div>
+  			</div>
+		</div>
+		<div class="food-two">
+			<div class="overlay">
+    			<div class="text2">
+    				<div class="btn2">
+    					<a href=".././Gym/index.html">See Menu</a>
+    				</div>
+    			</div>
+  			</div>
+		</div>
+		<div class="food-three">
+			<div class="overlay">
+    			<div class="text2">
+    				<div class="btn2">
+    					<a href=".././Gym/index.html">See Menu</a>
+    				</div>
+    			</div>
+  			</div>
+		</div>
+	</div>		
+</div>
+<!------------------Pizza Menu -------------------------->
+<div class="All-Menu">
+    <h1 >Our Menu Pricing</h1>
+    <div class="PizzaM">
+    	<table>
+    		<tr>
+    			<td><span>Italian Pizza</span></td>
+    			<td><span>20$</span></td>
+  			</tr>
+  			<tr>
+    			<td><span>Greek Pizza</span></td>
+    			<td><span>29$</span></td>
+  			</tr>
+  			<tr>
+    			<td><span>Margherita</span></td>
+    			<td><span>39$</span></td>
+  			</tr>
+  			<tr>
+    			<td><span>American Pizza</span></td>
+    			<td><span>60$</span></td>
+  			</tr>
+		</table>
+    </div>   	
+</div>
+<!-------------------BEST DEALS------------------------------->
+<div class="BEST-DEALS">
+	<h1>BEST DEALS</h1>
+	<div class="container" id="dvImage"></div>
+</div>
+<!-------------------footer------------------------------->
+<div class="footer">
+<div class="navigation-content">
+<div class="logo"><img src="img/logo.png"/></div>
+<div class="nav footerend">
+<ul>
+<li><a href="#">ABOUT US</a></li>
+<li><a href="#">CONTACT US</a></li>
+<li><a href="#">TEAM</a></li>
+<li><a href="#">SUPPORT</a></li>
+</ul>
+</div>
+<div class="social">
+<ul>
+<li><a href="#"><img src="images/facebook.png"></a></li>
+<li><a href="#"><img src="images/twitter.png"></a></li>
+<li><a href="#"><img src="images/youtube.png"></a></li>
+</ul>
+</div>
+</div>
+<!--NAVIGATION-END--------------->
+<div class="copyright">
+<p>Created 2021 Ammam Aymen</p>
+
+</div>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    var images = ["pizza.jpg", "burger.jpg", "drink.jpg"];
+    $(function () {
+        var i = 0;
+        $("#dvImage").css("background-image", "url(img/" + images[i] + ")");
+        setInterval(function () {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            $("#dvImage").fadeOut("slow", function () {
+                $(this).css("background-image", "url(img/" + images[i] + ")");
+                $(this).fadeIn("slow");
+            });
+        }, 5000);
+    });
+</script>
+</body>
+</html>
