@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	background-image:url("../img/2.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;}
+ul{
+	list-style:none;}
+a{
+	text-decoration:none;}
+.home{
+	max-width: 100%;
+	min-height: 100vh;
+}
+.home .wellcome{
+	width: 50%;
+    margin-top: 5%;
+    margin-left:25%;
+}
+.home .wellcome img{
+	width: 60%;
+    margin-left:20%;
+}
+.home .text1{
+	width: 50%;
+	height: 50%;
+	margin-left: 25%;
+    font-size: 35px;  
+    color:white;
+}
+.text1 p{
+	font-family:calibri;
+	margin-left: 20%; 
+	font-weight:bold;
+	font-size: 45px;
+}
+.text1 .btn1{
+	padding-left: 5%;
+	width: 50%;
+	margin-left: 28%;
+}
+span {
+	padding: 5px;
+	background-color: #e3b43e;
+	opacity:0.7; 
+}
+table {
+	text-align: center;
+	font-size: 25px;
+	font-family:calibri;
+	font-weight:bold;
+	width: 50%;
+	margin-left: 20%;
+	color: white;
+}
+td{
+	padding-top: 10px;
+}
+.text1 a{
+	font-size: 25px;
+	font-family:calibri;
+	font-weight:bold;
+	width: 10%;
+	padding: 2%;
+	border: #e3b43e solid 2px;
+	color: #e3b43e;
+}
+.All-Menu{
+	min-height: 100vh;
+}
+.text1 a:hover{
+	border: #e3b43e solid 2px;
+	color: white;
+	background-color: #e3b43e;
+}		
+.navigation-container{
+	width:100%;
+	height:60px;
+	background-color:#202020;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.20);
+	position:fixed;
+	top:0px;}
+.navigation-content{
+	height:60px;
+	margin:0px 12%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	}
+.nav ul{
+	display:flex;
+	}
+.nav ul li a{
+	padding:0px 30px;
+	font-family:calibri;
+	font-weight:bold;
+	color:#FFFFFF;}
+h1{
+	font-size: 45px;
+	font-family:calibri;
+	font-weight:bold;
+	color: white;
+	text-align: center;
+}
+.footer{
+	background-color:#0A0A0A;
+	height:150px;}
+.social ul{
+	display:flex;
+}
+.social ul li a{
+	padding:15px;}
+.social img{
+	height:15px;}
+.footerend ul li a{
+	border-left:3px solid #2E2E2E;
+	color:rgba(255,255,255,0.80)
+}
+.navigation-content{
+	border-bottom:2px solid rgba(255,255,255,0.10)}
+.copyright{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:myriad pro;
+	font-weight:400;
+	font-size:12px;
+	margin-top:10px;}
+.copyright p{
+	font-family:calibri;	
+	color:#B9B9B9;}
+/*Menu*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #202020;
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+  opacity: 0.8;
+}
+.overlay .text2{
+	width: 100%;
+	height: 50%;
+	margin-top: 50%;
+    font-size: 35px;  
+    color:white;
+    opacity: 1;
+}
+.text2 .btn2{
+	padding-left: 5%;
+	width: 50%;
+	margin-left: 28%;
+}
+.text2 a{
+	font-size: 25px;
+	font-family:calibri;
+	font-weight:bold;
+	width: 50%;
+	padding: 2%;
+	border: #e3b43e solid 2px;
+	color: #e3b43e;
+}
+.text2 a:hover{
+	border: #e3b43e solid 2px;
+	color: white;
+	background-color: #e3b43e;
+}
+.All-Menu{
+	display: none;
+}
+.BEST-DEALS{
+	min-height: 100vh;
+	background-color: #202020; 
+	width: 80%;
+	margin-left: 10%;
+	opacity: 0.9;
+	border-radius: 40px;
+}
+.container {
+  
+  background-position: center; 
+  width: 80%;
+  height: 80vh;
+  margin-left: 10%;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+.food-one:hover .overlay {
+  height: 100%;
+}
+.food-two:hover .overlay {
+  height: 100%;
+}
+.food-three:hover .overlay {
+  height: 100%;
+}
+.foodmenu{
+	width: 70%;
+	margin-left: 15%;
+	display:flex;
+	}
+.food-one,.food-two,.food-three{
+	position: relative;	
+	width:350px;
+	height:350px;
+	margin:10px;	
+	background-color:#B1B1B1;
+	border-radius: 15px;
+	}	
+.food-one,.food-two,.food-three{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		padding:5%;
+		text-shadow:2px 2px 12px rgba(0,0,0,0.2);
+		}
+.food-one{
+			background-image:url(../img/pizza.jpg);
+			background-size:cover;
+			background-repeat:no-repeat;
+			}
+.food-two{
+			background-image:url(../img/burger.jpg);
+			background-size:cover;
+			background-repeat:no-repeat;
+		}
+.food-three{
+			background-image:url(../img/drink.jpg);
+			background-size:cover;
+			background-repeat:no-repeat;
+			}
+
+		
