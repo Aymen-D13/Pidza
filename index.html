@@ -124,14 +124,14 @@
     var images = ["pizza.jpg", "burger.jpg", "drink.jpg"];
     $(function () {
         var i = 0;
-        $("#dvImage").css("background-image", "url(img/" + images[i] + ")");
+        $("#dvImage").css("background-image", "url(https://github.com/Aymen-D13/Pidza/blob/main/img/" + images[i] + ")");
         setInterval(function () {
             i++;
             if (i == images.length) {
                 i = 0;
             }
             $("#dvImage").fadeOut("slow", function () {
-                $(this).css("background-image", "url(img/" + images[i] + ")");
+                $(this).css("background-image", "url(https://github.com/Aymen-D13/Pidza/blob/main/img/" + images[i] + ")");
                 $(this).fadeIn("slow");
             });
         }, 5000);
